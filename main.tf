@@ -9,3 +9,5 @@ resource "random_id" "random" {
 output "random1" {
   value = "${random_id.random.hex}"
 }
+
+variable "billing_code" {}
