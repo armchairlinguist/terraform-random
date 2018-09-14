@@ -10,7 +10,7 @@ output "random" {
   value = "${random_id.random.hex}"
 }
 
-resource "null_resource" "env" {
+resource "null_resource" "echo" {
   provisioner "local-exec" {
     command = "echo $TF_LOG"
   }
