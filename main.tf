@@ -12,7 +12,7 @@ output "random" {
 
 resource "null_resource" "env" {
   provisioner "local-exec" {
-    command = "set | grep TF_LOG"
+    command = "env | grep TF_LOG"
   }
 }
 
